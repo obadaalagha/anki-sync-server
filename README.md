@@ -2,7 +2,9 @@
 
 _Version 1.0.0_
 
-This is a Dockerized Anki Sync Server behind an Nginx Reverse Proxy with SSL. The Sync Server implementation used is the default Rust-based Sync Server, built within a Debian-based Rust Docker container.
+This is a Dockerized Anki Sync Server behind an Nginx Reverse Proxy with SSL. It is tested against Anki 24.06.3.
+
+The Sync Server implementation used is the default Rust-based Sync Server, built within a Debian-based Rust Docker container.
 
 The Nginx SSL configuration is from [my other repository here](https://github.com/obadaalagha/4stack4pi/).
 
