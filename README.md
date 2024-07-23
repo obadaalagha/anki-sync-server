@@ -1,6 +1,6 @@
 # Dockerized Anki Sync Server
 
-_Version 1.0.2_
+_Version 1.0.3_
 
 This is a Dockerized Anki Sync Server behind an Nginx Reverse Proxy with SSL. It is tested against Anki 24.06.3.
 
@@ -8,7 +8,7 @@ The Sync Server implementation used is the default Rust-based Sync Server, built
 
 The Nginx SSL configuration is from [my other repository here](https://github.com/obadaalagha/4stack4pi/).
 
-I couldn't figure out how to Use the ANKI_HOST variable. The default ANKI_PORT within the container is 8080, this can be mapped to any external host port.
+The ANKI_HOST and ANKI_PORT variables which can be set are not used. See documentation if their use is needed.
 
 The Dockerfile for the image is included.
 
@@ -36,3 +36,5 @@ This [link from the docs](https://docs.ankiweb.net/sync-server.html#client-setup
 ### Note on AnkiDroid
 
 As of the writing of this section (July 22nd, 2024), AnkiDroid (version 2.18.4) doesn't support certificates in the user trust store due to a dependency from a Rust crate. This issue was introduced during the 2.16 release. You can see the [bug here](https://github.com/ankidroid/Anki-Android/issues/14686). There is a PR in place that has seemingly been [approved for merging into release 2.19](https://github.com/ankidroid/Anki-Android/pull/16481).
+
+I tested against [AnkiDroid 2.19alpha10](https://github.com/ankidroid/Anki-Android/releases/tag/v2.19alpha10) with the `AnkiDroid-2.19alpha10-full-universal` apk and syncrhonization seems to work. This prerelease feature adds a field that allows you to paste a custom certificate that can be used, which alleviates the issue with the Rust crate.

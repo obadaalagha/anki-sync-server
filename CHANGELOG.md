@@ -1,5 +1,8 @@
 # Changelog
 
+Version 1.0.3:
+- Updated section about AnkiDroid in README with testing of the latest Alpha release, AnkiDroid 2.19alpha10, with the `AnkiDroid-2.19alpha10-full-universal` apk used for testing. Clarified section about ANKI_HOST and ANKI_PORT variables.
+
 Version 1.0.2:
 - Added section about AnkiDroid in the README. Updated the version at the top of the readme and in the Dockerfile.
 
