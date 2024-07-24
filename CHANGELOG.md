@@ -1,5 +1,8 @@
 # Changelog
 
+Version 1.0.4:
+- Added `restart` policy to nginx and anki containers as some instability with the anki-sync-server container has been experienced.
+
 Version 1.0.3:
 - Updated section about AnkiDroid in README with testing of the latest Alpha release, AnkiDroid 2.19alpha10, with the `AnkiDroid-2.19alpha10-full-universal` apk used for testing. Clarified section about ANKI_HOST and ANKI_PORT variables.
 

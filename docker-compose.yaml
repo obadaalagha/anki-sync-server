@@ -2,6 +2,7 @@ services:
   anki:
     image: anki-sync-server-docker
     container_name: anki-sync-server
+    restart: unless-stopped
     command: anki-sync-server
     environment:
       - PASSWORDS_HASHED=1
@@ -15,6 +16,7 @@ services:
   nginx:
     image: nginx:stable-alpine
     container_name: nginx
+    restart: unless-stopped
     environment:
       - NGINX_SSL_CERT=${SSL_CERTIFICATE_NAME}
       - NGINX_SSL_CERT_KEY=${SSL_CERTIFICATE_KEY_NAME}
