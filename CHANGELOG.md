@@ -1,5 +1,8 @@
 # Changelog
 
+Version 1.0.5:
+- Made naming between examples consistent in config directory. Added .gitignore file.
+
 Version 1.0.4:
 - Added `restart` policy to nginx and anki containers as some instability with the anki-sync-server container has been experienced.
 

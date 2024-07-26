@@ -20,5 +20,5 @@ RUN echo 'export "PATH=$PATH:/usr/local/anki/protoc-27.2/bin"' >> "$HOME/.bashrc
 # Install Anki Sync Server
 RUN cargo install --git https://github.com/ankitects/anki.git --tag 24.06.3 anki-sync-server
 
-LABEL version="1.0.4"
-LABEL description="Anki Sync Server Rust 24.06.3 within a Debian-based Rust container"
+LABEL version="1.0.5"
+LABEL description="Default Anki Sync Server written in Rust, v24.06.3, within a Debian-based Rust container"

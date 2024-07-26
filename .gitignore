@@ -1,0 +1,5 @@
+config/nginx/templates/*
+config/nginx/conf.d/*
+!/config/nginx/templates/ssl-common.template
+!/config/nginx/templates/example.conf.template
+!/config/nginx/conf.d/proxy-common

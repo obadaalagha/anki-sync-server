@@ -1,6 +1,6 @@
 # Dockerized Anki Sync Server
 
-_Version 1.0.4_
+_Version 1.0.5_
 
 This is a Dockerized Anki Sync Server behind an Nginx Reverse Proxy with SSL. It is tested against Anki 24.06.3.
 
